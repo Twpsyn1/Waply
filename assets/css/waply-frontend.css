@@ -1,0 +1,177 @@
+.waply-floating-btns {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.waply-btn {
+  background: #25d366;
+  color: #fff;
+  border-radius: 32px;
+  padding: 0 18px 0 10px;
+  min-width: 56px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  outline: none;
+}
+.waply-btn:focus, .waply-btn:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+}
+.waply-btn-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    display: inline-block;
+    background: url('../img/whatsapp-icon-default.svg') no-repeat center/contain;
+}
+.waply-btn-style-default .waply-btn-icon {
+    background-image: url('../img/whatsapp-icon-default.svg');
+}
+.waply-btn-style-rounded .waply-btn-icon {
+    background-image: url('../img/whatsapp-icon-rounded.svg');
+}
+.waply-btn-style-square .waply-btn-icon {
+    background-image: url('../img/whatsapp-icon-square.svg');
+}
+.waply-btn-style-circle .waply-btn-icon {
+    background-image: url('../img/whatsapp-icon-circle.svg');
+}
+.waply-btn-style-outline .waply-btn-icon {
+    background-image: url('../img/whatsapp-icon-default.svg');
+}
+.waply-btn-style-rounded { border-radius: 32px; }
+.waply-btn-style-square { border-radius: 4px; }
+.waply-btn-style-circle { border-radius: 50%; min-width:56px; min-height:56px; justify-content:center; }
+.waply-btn-style-outline { background: #fff; color: #25d366; border:2px solid #25d366; }
+.waply-popup {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  background: #fff;
+  color: #222;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  min-width: 280px;
+  max-width: 350px;
+  padding: 0 0 18px 0;
+  display: none;
+  z-index: 100000;
+  animation: waplyFadeIn 0.3s;
+  overflow: hidden;
+}
+.waply-popup-header {
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 18px 12px 18px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.waply-popup-header .waply-popup-icon {
+  width: 32px;
+  height: 32px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center/contain;
+  flex-shrink: 0;
+}
+.waply-popup-header-title {
+  font-size: 1.15em;
+  font-weight: 600;
+  flex: 1;
+}
+.waply-popup-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.waply-popup-close:hover {
+  opacity: 1;
+}
+.waply-popup-accounts {
+  padding: 16px 18px 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.waply-popup-account-card {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 12px 12px 12px 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.waply-popup-account-card .waply-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.waply-popup-account-details {
+  flex: 1;
+}
+.waply-popup-account-name {
+  font-weight: 600;
+  font-size: 1.09em;
+  color: #189c3c;
+}
+.waply-popup-account-title {
+  color: #666;
+  font-size: 0.97em;
+  margin-bottom: 3px;
+}
+.waply-popup-account-btn {
+  margin-top: 7px;
+}
+.waply-fab {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  width: 64px;
+  height: 64px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2em;
+  cursor: pointer;
+  z-index: 100001;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.waply-fab:hover {
+  background: #189c3c;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+}
+
+@keyframes waplyFadeIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.waply-popup-inner { display: flex; align-items: flex-start; gap: 12px; }
+.waply-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.waply-popup-details { flex:1; }
+.waply-popup-name { font-weight: bold; font-size: 1.08em; }
+.waply-popup-title { color: #666; font-size: 0.96em; margin-bottom: 4px; }
+.waply-popup-text { margin-top: 8px; }

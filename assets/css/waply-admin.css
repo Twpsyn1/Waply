@@ -1,0 +1,227 @@
+/* Waply Admin Modern Styles */
+
+/* Waply Button Preview Styles */
+.waply-btn {
+    background: #25d366;
+    color: #fff;
+    border-radius: 32px;
+    padding: 0 18px 0 10px;
+    min-width: 56px;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+}
+
+.waply-btn:focus, .waply-btn:hover {
+    background: #1ebea5;
+    color: #fff;
+}
+.waply-btn-style-default {
+    background: #25d366 !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+}
+
+.waply-btn-style-rounded {
+    background: #25d366 !important;
+    color: #fff !important;
+    border-radius: 32px !important;
+}
+
+.waply-btn-style-square {
+    background: #25d366 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.waply-btn-style-circle {
+    background: #55CD6C !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    min-width: 56px !important;
+    min-height: 56px !important;
+    width: 56px !important;
+    height: 56px !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.waply-btn-style-outline {
+    background: #fff !important;
+    color: #25d366 !important;
+    border: 2px solid #25d366 !important;
+    border-radius: 6px !important;
+}
+
+.waply-btn-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    display: inline-block;
+    /* No background or background-image here, SVG is injected via JS */
+}
+
+
+
+/* Live dark mode for admin */
+body.waply-dark-active,
+body.waply-dark-active #wpcontent,
+body.waply-dark-active #wpbody,
+body.waply-dark-active .wrap {
+    background: #23272f !important;
+    color: #f2f2f2 !important;
+}
+body.waply-dark-active .waply-dark-banner {
+    background: #23272f;
+    color: #25d366;
+}
+
+/* Sidebar submenu icons */
+.waply-menu-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: text-bottom;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.waply-menu-accounts {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58"><g><path fill="%232CB742" d="M0,58l4.988-14.963C2.457,38.78,1,33.812,1,28.5C1,12.76,13.76,0,29.5,0S58,12.76,58,28.5S45.24,57,29.5,57c-4.789,0-9.299-1.187-13.26-3.273L0,58z"/><path fill="%23FFF" d="M47.683,37.985c-1.316-2.487-6.169-5.331-6.169-5.331c-1.098-0.626-2.423-0.696-3.049,0.42c0,0-1.577,1.891-1.978,2.163c-1.832,1.241-3.529,1.193-5.242-0.52l-3.981-3.981l-3.981-3.981c-1.713-1.713-1.761-3.41-0.52-5.242c0.272-0.401,2.163-1.978,2.163-1.978c1.116-0.627,1.046-1.951,0.42-3.049c0,0-2.844-4.853-5.331-6.169c-1.058-0.56-2.357-0.364-3.203,0.482l-1.758,1.758c-5.577,5.577-2.831,11.873,2.746,17.45l5.097,5.097l5.097,5.097c5.577,5.577,11.873,8.323,17.45,2.746l1.758-1.758C48.048,40.341,48.243,39.042,47.683,37.985z"/></g></svg>');
+}
+.waply-menu-buttons {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%234CBA68" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>');
+}
+.waply-menu-dark {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%234CBA68" d="M12 2a10 10 0 0 0 0 20A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8.009 8.009 0 0 1-8 8Zm0-14a6 6 0 0 0 0 12A6 6 0 0 0 12 6Z"/></svg>');
+}
+.waply-menu-settings {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%234CBA68" d="M19.14,12.94a7.07,7.07,0,0,0,0-1.88l2.11-1.65a.5.5,0,0,0,.12-.65l-2-3.46a.5.5,0,0,0-.61-.22l-2.49,1a7.13,7.13,0,0,0-1.6-.93l-.38-2.65A.5.5,0,0,0,13,2h-4a.5.5,0,0,0-.5.42l-.38,2.65a7.13,7.13,0,0,0-1.6.93l-2.49-1a.5.5,0,0,0-.61.22l-2,3.46a.5.5,0,0,0,.12.65l2.11,1.65a7.07,7.07,0,0,0,0,1.88l-2.11,1.65a.5.5,0,0,0-.12.65l2,3.46a.5.5,0,0,0,.61.22l2.49-1a7.13,7.13,0,0,0,1.6.93l.38,2.65A.5.5,0,0,0,9,22h4a.5.5,0,0,0,.5-.42l.38-2.65a7.13,7.13,0,0,0,1.6-.93l2.49,1a.5.5,0,0,0,.61-.22l2-3.46a.5.5,0,0,0-.12-.65ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>');
+}
+.waply-menu-pro {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%234CBA68" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>');
+}
+
+.waply-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.waply-name-link {
+  font-weight: 600;
+  color: #2cb742;
+  text-decoration: none;
+}
+.waply-name-link:hover {
+  text-decoration: underline;
+  color: #189c3c;
+}
+.waply-shortcode-box {
+  background: #f4f4f4;
+  border-radius: 5px;
+  padding: 3px 8px;
+  font-size: 13px;
+  font-family: monospace;
+  color: #333;
+  display: inline-block;
+}
+
+.waply-admin-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    margin-bottom: 24px;
+    max-width: 800px;
+}
+.waply-admin-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.waply-admin-header img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.waply-admin-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+    margin-bottom: 12px;
+}
+.waply-admin-field {
+    margin-bottom: 18px;
+}
+.waply-admin-label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+.waply-toggle {
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.waply-toggle input {
+    display: none;
+}
+.waply-toggle-slider {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background: #4CBA68;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.waply-toggle input:checked + .waply-toggle-slider {
+    left: 20px;
+}
+.waply-shortcode-box {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 12px;
+    word-break: break-all;
+}
+.waply-accounts-table th, .waply-accounts-table td {
+    padding: 10px 12px;
+    vertical-align: middle;
+}
+.waply-accounts-table .waply-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+.waply-accounts-table .waply-name-link {
+    font-weight: 600;
+    color: #2CB742;
+    text-decoration: none;
+}
+.waply-accounts-table .waply-name-link:hover {
+    text-decoration: underline;
+}
